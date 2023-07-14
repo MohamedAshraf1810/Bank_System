@@ -1,0 +1,74 @@
+
+body
+{
+    padding: 0px;
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    
+    background-image: url(../images/50cxl0f8.png);
+    color: white;
+}
+hr
+{
+  
+  background-image: url(../images/50cxl0f8.png);
+  padding: 19px;
+}
+input
+{
+  margin-bottom: 10px;
+  padding: 5px;
+}
+button ,.RemoveBlock
+{
+  border: none;
+  
+  background-image: url(../images/50cxl0f8.png);
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+button:hover
+{
+  color: white;
+}
+.RemoveBlock:hover
+{
+  color: red;
+  font-size: 17px;
+}
+
+.Section1
+{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+h4
+{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  display: none;
+}
+
+#adminNav
+{
+  background-image: url(../images/50cxl0f8.png);
+}

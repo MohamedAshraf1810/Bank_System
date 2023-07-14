@@ -1,0 +1,369 @@
+#popUpSection
+{
+    background-image:linear-gradient(rgba(33, 33, 33, 0.5),rgba(33, 33, 33, 0.5)), url('../Images/safe-g0d1d658db_1920.jpg');
+}
+
+#photo
+{
+    display: none;
+}
+
+#AuthTitle
+{
+    margin-bottom: 30px;
+}
+
+#facebtn
+{
+    margin-top: 20px;
+}
+
+#authenticationLoader
+{
+    background-image: linear-gradient(rgb(155, 155, 155,0.6), rgb(155, 155, 155,0.6));
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#authenticationLoader div
+{
+    background-color: white;
+    width: 40%;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#authenticationLoader div p
+{
+    margin-right: -40px;
+    z-index: 20;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#authenticationLoader div img
+{
+    margin-right: -50px;
+}
+
+.Name_Of_User
+{
+    color: white;
+}
+
+#videoElement
+{
+    width: 250px;
+    height: 250px;
+    transform: rotateY(180deg);
+    
+}
+
+
+.User3Photos
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(220, 220, 220);
+    margin-left: -20px;
+}
+
+#userPic1 , #userPic2 , #userPic3
+{
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+#userPic3
+{
+    margin: 0;
+}
+
+.authenticationLoaderIMG
+{
+    width: 300px;
+    height: 300px;
+}
+
+/* Media Query */
+
+
+@media (max-width: 481px) 
+{
+
+    .BDFSectionCON1
+    {
+        overflow: auto;
+        height: initial;
+    }
+
+    .S1Cn1D1
+    {
+        display: block;
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .S1Cn1D1spn1
+    {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .S1Cn1D2 h1, h5
+    {
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    #videoElement
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .facebtnControlDiv
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .S1Cn1D2
+    {
+        display: grid;
+        margin-top: 0;
+        padding-top: 0;
+        height: fit-content;
+        padding: 50px;
+    }
+    
+    .authenticationLoaderIMG
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #authenticationLoader div p
+    {
+        margin-right: 0px;
+        margin-bottom: -30px;
+        position: relative;
+        z-index: 10000;
+        font-size: 19px;
+    }
+
+    #authenticationLoader div
+    {
+        display: block;
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    #authenticationLoader div img
+    {
+        margin-right: 0px;
+    }
+
+}   
+
+
+
+@media (min-width: 481px) and (max-width: 767px) 
+{
+    .BDFSectionCON1
+    {
+        overflow: auto;
+        height: initial;
+    }
+
+    .S1Cn1D1
+    {
+        display: block;
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .S1Cn1D1spn1
+    {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .S1Cn1D2 h1, h5
+    {
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    #videoElement
+    {
+        width: 400px;
+        height: 300px;
+    }
+
+    #container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .facebtnControlDiv
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .S1Cn1D2
+    {
+        display: grid;
+        margin-top: 0;
+        padding-top: 0;
+        height: fit-content;
+        padding: 50px;
+    }
+        
+    .authenticationLoaderIMG
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #authenticationLoader div p
+    {
+        margin-right: 0px;
+        margin-bottom: -30px;
+        position: relative;
+        z-index: 10000;
+        font-size: 19px;
+    }
+
+    #authenticationLoader div
+    {
+        display: block;
+        height: 200px;
+        padding: 20px;
+    }
+
+    #authenticationLoader div img
+    {
+        margin-right: 0px;
+    }
+    
+}
+
+@media(min-width : 768px) and (max-width:1024px)
+{
+    .BDFSectionCON1
+    {
+        overflow: auto;
+        height: initial;
+    }
+
+    .S1Cn1D1
+    {
+        display: flex;
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .S1Cn1D1spn1
+    {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .S1Cn1D2 h1, h5
+    {
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    #videoElement
+    {
+        width: 400px;
+        height: 300px;
+    }
+
+    #container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .facebtnControlDiv
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .S1Cn1D2
+    {
+        display: grid;
+        margin-top: 0;
+        padding-top: 0;
+        height: fit-content;
+        padding: 50px;
+    }
+
+    #authenticationLoader div img
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+    #authenticationLoader div p
+    {
+        font-size: initial;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1281px)
+{
+    #videoElement
+    {
+        height:250px ;
+        width: 300px;
+    }
+    #container
+    {
+        height: fit-content;
+    }
+}

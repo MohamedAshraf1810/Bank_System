@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+<!-- TITLE -->
+{% block title %} Authenticate voice {% endblock %}
+
+<!-- STYLE SHEETS -->
+{% block style %}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/otp.css')}}"> 
+
+{% endblock %}
+
+<!-- BODY -->
+
+{% block content %}
+
+<section class="otp">
+    <div class="OTPSEC">
+        <img width="90px" height="90px" src="{{url_for('static',filename='assets/images/MB.png')}}"/>
+        <h2>OTP VERIFICATION</h2><br><br>
+        <div class="OTPSECDV2">
+            <form method="post", action="/otpVerify">
+                <input class="otpInput" type="number" name="userOTP" placeholder="Enter 6 Digits OTP"><br>
+                <button class="verifyOTP" type="submit">Verify</button>
+            </form>
+            <br>
+        </div>
+        <p class="FlashMSG">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {%for msg in messages %}
+                    {{ msg }}
+                {% endfor %}
+            {% endif %}
+        {%endwith%}
+    </p>
+
+    </div>
+</section>
+
+{% endblock %}
+
+<!-- END BODY -->
+
+

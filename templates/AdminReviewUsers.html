@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+<!-- TITLE -->
+{% block title %} test1 {% endblock %}
+
+<!-- STYLE SHEETS -->
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static',filename='Bootstrap/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/fontawesome.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/all.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/style1.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/profile.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/usersPanel.css')}}">
+
+{% endblock %}
+
+
+
+<!-- BODY -->
+{% block content %}
+
+
+  <nav id="adminNav" class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Admin Panel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+
+        <form action="/AdminControl1">
+            <button class="Remblock" type="submit" class="nav-link"><p class="nav-item nav-link active">Users </p></button>
+        </form>
+    
+        <form action="/AdminControl2">
+            <button class="Remblock" type="submit" class="nav-link"><a id="remblock2" class="nav-link">Remove Block <span class="sr-only">(current)</span> </a></button>
+        </form>
+        <form action="/logoutAdmin">
+            <button class="Remblock" type="submit" class="nav-link"><a id="remblock2" class="nav-link">logout</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <h1>Users Database</h1>
+
+  <table>
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Username</th>
+              <th>password</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>phone</th>
+              <th>Balance</th>
+              <th>Block State</th>
+              <th>Full Name</th>
+          </tr>
+      </thead>
+      <tbody>
+        
+          {% for row in data %}
+              <tr>
+                  <td>{{ row[0] }}</td>
+                  <td>{{ row[1] }}</td>
+                  <td>{{ row[2] }}</td>
+                  <td>{{ row[4] }}</td>
+                  <td>{{ row[5] }}</td>
+                  <td>{{ row[6] }}</td>
+                  <td>{{ row[7] }}</td>
+                  <td>{{ row[8] }}</td>
+                  <td>{{ row[9] }}</td>
+                  <td>{{ row[10] }}</td>
+              </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+
+
+
+  <script src="{{url_for('static',filename='assets/js/all.min.js')}}"></script>
+  <script src="{{url_for('static',filename='jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='Bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/js/custom.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/js/owl.js')}}"></script>
+{% endblock %}
+<!-- END BODY -->
+
+

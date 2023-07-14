@@ -1,0 +1,82 @@
+header
+{
+    position: relative;
+}
+
+
+/* Overview */
+.Overview
+{
+    width: 100%;
+}
+
+.Overview p
+{
+    margin: 0;
+    padding: 5px 0px 20px 20px;
+    font-size: 16px;
+    color: black;
+}
+
+h1
+{
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation */
+
+.Navigation
+{
+    width: 100%;
+}
+
+#accordion
+{
+    margin: auto;
+    padding: 5px 0px 25px 20px;
+}
+
+.card
+{
+    border-radius: 0px;
+}
+
+.card-body p
+{
+    margin: 0;
+    padding: 5px 0px 20px 20px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Authentication */
+
+.Authentication
+{
+    width: 100%;
+}
+
+.Authentication p
+{   
+    padding: 0px 0px 0px 20px;
+    font-size: 16px;
+    color: black;
+    line-height: 40px;
+}
+
+.AuthenticationPara
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.spn1 , .spn2
+{
+    font-weight: bold;
+}
+
+.spn2
+{
+    color: rgb(0, 174, 255);
+}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+<!-- TITLE -->
+{% block title %} Authenticate Face {% endblock %}
+
+<!-- STYLE SHEETS -->
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">   
+<link rel="stylesheet" href="{{url_for('static',filename='css/face.css')}}">   
+{% endblock %}
+
+
+<!-- BODY -->
+
+{% block content %}
+
+<div id="preloader"></div>
+<div id="authenticationLoader">
+    <div>
+        <p>Please Wait While Identifying You...</p>
+        <img class="authenticationLoaderIMG" src="{{url_for('static',filename='images/loading.gif')}}" alt="Avatar">
+    </div>
+</div>
+
+<section class="BDFSection" id="popUpSection">
+    <div class="BDFSectionCON1 BDFSectionCON1Edit">
+        <div class="S1Cn1D1">
+            <div>
+                <span class="S1Cn1D1spn1">Face Regonition</span><br>
+                <img id="DirectionImg" src="" alt="Avatar" width="60%" height="60%">
+            </div>
+        </div>
+        <div class="S1Cn1D2">
+            <div>
+                <div>
+                    <h1 id="AuthTitle">Authentication</h1>
+                </div>
+                
+                <div id="container">
+                    <video id="videoElement" name='vid' autoplay playsinline></video>
+                    <canvas style="display: none;" id="CANVAS" name="CANVAS">Your browser does not support Canvas.</canvas>
+                    <audio style="display: none;" id="shutter_sound" src="../static/Sounds/shutter2.mp3" preload="auto"></audio>
+                </div>
+                <div class="User3Photos">
+                    <img id="userPic1" height="70px" width="70px" src="" alt="Pic1">
+                    <img id="userPic2" height="70px" width="70px" src="" alt="Pic2">
+                    <img id="userPic3" height="70px" width="70px" src="" alt="Pic3">
+                </div>
+                <button style="display: inline;" id="facebtn" class="bn632-hover bn25">Authenticate</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="{{url_for('static',filename='js/face.js')}}"></script>
+
+{% endblock %}
+
+<!-- END BODY -->
+
+

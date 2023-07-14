@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+<!-- TITLE -->
+{% block title %} ADMIN PANEL {% endblock %}
+
+<!-- STYLE SHEETS -->
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static',filename='Bootstrap/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/fontawesome.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/all.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/style1.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/profile.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/Admin_login.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.css')}}">
+                
+{% endblock %}
+
+<!-- BODY -->
+{% block content %}
+
+
+<section class="AdminPanel">
+  <div class="AdminPanelDiv1">
+    <h3>Administration Panel</h1>
+  </div>
+  
+  <div class="AdminPanelDiv2">
+      <div class="AdminPanelDiv2Ch1">
+        <div class="head">
+          <i class="fa-solid fa-lock"></i>
+          <h1>Login</h1>
+        </div>
+        
+        <form method="post" action="/admin_login">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">User</label>
+            <input name="adminUserName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input name="AdminPassword" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+
+          <div class="mb-3" id="btnCont">
+            <button id="SubmitBtn" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+  </div>  
+</section>
+
+
+
+  <script src="{{url_for('static',filename='assets/js/all.min.js')}}"></script>
+{% endblock %}
+<!-- END BODY -->

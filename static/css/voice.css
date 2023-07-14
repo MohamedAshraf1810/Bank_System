@@ -1,0 +1,331 @@
+.S1Cn1D1 img
+{
+    border-radius: 15px;
+    height: 150px;
+    width: 200px;
+}
+
+#popUpSection
+{
+    background-image:linear-gradient(rgba(33, 33, 33, 0.5),rgba(33, 33, 33, 0.5)), url('../Images/safe-g0d1d658db_1920.jpg');
+}
+
+.S1Cn1D2ControlDiv
+{
+    width: 70%;
+}
+
+.voiceAndBtnDiv
+{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#facebtn
+{
+    margin-top: 40px;
+}
+
+#AudioPlayer
+{
+    margin-top: 20px;
+    width: 80%;
+}
+
+audio::-webkit-media-controls-panel 
+{
+    background-color: #88acce;
+}
+  
+
+.audioControlBtns
+{
+    margin-top: 20px;
+}
+
+#record , #stop , #save
+{
+    margin-right: 10px;
+}
+
+
+
+#stop
+{
+    background-color: #d6d6cd ; 
+    color: white;
+    cursor: default;  
+}
+
+.recGif
+{
+    display: none;
+}
+
+.saySpan
+{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.controlButtons
+{
+    border-radius: 15px;
+    padding: 10px  25px  10px  25px;
+    border: none;
+    background-color: #88acce;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+#authenticationLoader
+{
+    background-image: linear-gradient(rgb(155, 155, 155,0.6), rgb(155, 155, 155,0.6));
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#authenticationLoader div
+{
+    background-color: white;
+    width: 40%;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#authenticationLoader div p
+{
+    margin-right: -40px;
+    z-index: 20;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#authenticationLoader div img
+{
+    margin-right: -50px;
+}
+
+.Name_Of_User
+{
+    color: white;
+}
+
+.OTPspn
+{
+    margin-top: 15px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-size: 12px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 480px) 
+{   
+    .S1Cn1D1
+    {
+        height: 200px;
+    }
+    .BDFSectionCON1
+    {
+        background-color: aqua;
+        height: auto;
+    }
+
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    .S1Cn1D1spn1, .S1Cn1D1spn2
+    {
+        margin-top: 0;
+    }
+    .S1Cn1D2 h1, h5
+    {
+        font-size: 20px;
+    }
+
+    #videoElement
+    {
+        height: 150px;
+        width: 250px;
+    }
+
+    #container
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #facebtn
+    {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .facebtnControlDiv
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #S1Cn1D2ID
+    {
+        display: flex;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) 
+{
+    .S1Cn1D1
+    {
+        height: 200px;
+    }
+    .BDFSectionCON1
+    {
+        height: auto;
+    }
+
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    .S1Cn1D1spn1, .S1Cn1D1spn2
+    {
+        margin-top: 0;
+    }
+    .S1Cn1D2 h1, h5
+    {
+        font-size: 20px;
+    }
+
+    #videoElement
+    {
+        height: 150px;
+        width: 250px;
+    }
+
+    #container
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #facebtn
+    {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .facebtnControlDiv
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #S1Cn1D2ID
+    {
+        display: flex;
+    }
+}
+          
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    .S1Cn1D1
+    {
+        height: 200px;
+    }
+    .BDFSectionCON1
+    {
+        background-color: aqua;
+        height: auto;
+    }
+
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    .S1Cn1D1spn1, .S1Cn1D1spn2
+    {
+        margin-top: 0;
+    }
+    .S1Cn1D2 h1, h5
+    {
+        font-size: 20px;
+    }
+
+    #videoElement
+    {
+        height: 150px;
+        width: 250px;
+    }
+
+    #container
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #facebtn
+    {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .facebtnControlDiv
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #S1Cn1D2ID
+    {
+        display: flex;
+    }
+
+}
+          
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px)
+{
+    .S1Cn1D1 img
+    {
+        height: 100px;
+        width: 150px;
+    }
+
+    #videoElement
+    {
+        height: 200px;
+        width: 250px;
+    }
+    #container
+    {
+        height: 200px;
+    }
+    #S1Cn1D2ID
+    {
+        display: flex;
+    }
+}

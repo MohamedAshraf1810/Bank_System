@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+<!-- TITLE -->
+{% block title %} Help {% endblock %}
+
+<!-- STYLE SHEETS -->
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static',filename='Bootstrap/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/fontawesome.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/all.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='assets/css/style1.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/help.css')}}">
+
+{% endblock %}
+
+<!-- BODY -->
+{% block content %}
+
+<header class="">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><h2>MAS <em>Bank</em></h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item "><a class="nav-link" href="/">Home</a></li> 
+            <li class="nav-item"><a class="nav-link" href="#Service">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="#About">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactUs">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/userhelp">help</a></li>  
+            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <section class="Overview">
+    <h1>Overview</h1>
+    <p>Welcome to the Help Page for "Securing Online Banking Transactions"! Our website is dedicated to providing our users with 
+      the highest level of security and reliability when it comes to online banking transactions. 
+      We understand that security is of utmost importance when it comes to banking, 
+      and that is why we have implemented multiple authentication measures to ensure that your personal information is safe and secure.
+      Our website features a home page that contains public information about banking and currency details, 
+      as well as a login page that requires users to enter their username and password. In addition, 
+      we have incorporated face recognition and voice recognition pages to authenticate the identity of our users. 
+      If you have any questions or concerns about our authentication measures or any other aspect of our website, 
+      please refer to this Help Page for assistance.</p>
+  </section>
+  
+  <section class="Navigation">
+    <h1>Navigation</h1>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Home Page
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <p>Our website is designed to provide you with valuable information on how to protect yourself and your 
+              finances while using online banking services. We offer tips and advice on creating strong passwords, 
+              recognizing phishing scams, and keeping your devices secure. We also provide updates on the latest security breaches 
+              and how to protect yourself from them. Our goal is to help you stay informed and educated on the latest online banking 
+              security measures so that you can bank with confidence.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Service Section
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <p>Welcome to our Services! We offer modern web and mobile applications that provide you with the convenience of managing 
+              your finances from anywhere in the world. With our applications, you can easily track your expenses and income, 
+              and get a clear picture of where your money is going every month. You will also receive notifications when you're close 
+              to hitting your limits, allowing you to stay on top of your finances. Our all-in-one account allows you to manage your savings, 
+              investments, pension, and much more, making it easier than ever to keep track of your money. We are committed to providing you 
+              with a seamless and hassle-free experience when it comes to managing your finances. 
+              Thank you for choosing our services, and we look forward to helping you achieve your financial goals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              About Us
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <p>Welcome to our About Us section! Our company is dedicated to providing you with the best financial services available. 
+              We believe that everyone deserves access to affordable and convenient financial solutions, and we are committed to helping 
+              you achieve your financial goals. Our team of experts is passionate about what they do and is dedicated to providing you with 
+              the highest level of customer service. We pride ourselves on our transparency and honesty, and we are committed to earning your trust. 
+              Thank you for considering us as your financial service provider, and we look forward to helping you achieve financial success.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Login
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            <p>Welcome to our Login Page, where we take the security of your account very seriously. 
+              In order to provide the highest level of authentication, 
+              we have implemented a multi-level security process. 
+              The first step is a traditional username and password login, which is a basic security measure that most people are 
+              familiar with. However, we know that this alone is not enough to protect your account from hackers.</p>
+            <br>
+            <p>That's why we have added a face authentication page to our login process. 
+              This uses advanced facial recognition technology to verify your identity, 
+              making it much more difficult for someone else to gain access to your account. 
+              We also have a voice authentication page, which further enhances the security of your account. 
+              This feature uses voice recognition technology to verify your identity, providing an additional layer of security.</p>
+            <br>
+            <p>By using a multi-level authentication process, we are able to provide you 
+              with the highest level of security for your account. We take your privacy seriously, 
+              and we are committed to keeping your information safe and secure. Thank you for choosing our services, 
+              and we look forward to providing you with a safe and secure online banking experience.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Authentication">
+    <h1>Authentication</h1>
+    <p class="AuthenticationPara">After navigating to the login page, there are a few steps that the user will take to authenticate their identity.</p>
+    <p>
+      The System Provoides Three Steps Which Are :
+      <br>
+      <span class="spn1">. Password Authentication</span> <br>
+      &ensp; This Way Is The traditional Way Of Authentication That Takes The Username And Password From The User.
+      <br>&ensp; After successful Authentication We Proced To Biometric Authentications <br>
+        <span class="spn1">. Biometric Authentications</span><br>
+      &ensp; <span class="spn2">*First Biometric Authentication</span><br>
+      &ensp;&ensp; &ensp; <span class="spn1">Face Authentication</span> <br>
+      &ensp;&ensp; &ensp;&ensp; The User Has To Take a 3 Pictures With Different Positions Which are 1) Frontal Image , 2) Right Image, 3) Left Image Respectively <br>
+      &ensp;&ensp; &ensp;&ensp; After The 3 Images Is Identified successfuly For This User Then The User Is Proceded To Second Biometric Authentication
+      <br>
+      &ensp; <span class="spn2">*Second Biometric Authentication</span> <br>
+      &ensp;&ensp; &ensp; <span class="spn1">Voice Authentication</span> <br>
+      &ensp;&ensp; &ensp;&ensp; This Is The Last Way That If successfuly verified The User Is Able to Access The System Performing Transactions
+      <br>&ensp;&ensp; &ensp;&ensp;  The User Record a Voice Which Contain a words That is Provided By The System Then This Voice Is Identified By System 
+      <br>&ensp;&ensp; &ensp;&ensp;  If The Result Of identification Is True Then The User Proceed To The System 
+      <br>&ensp;&ensp;&ensp;&ensp;&ensp; If The User has inability To Use Voice recognition He is Able to use OTP which Is Send To The User Mail To access The System Through This Way
+    </p>
+    
+    <br><br><br>
+  </section>
+
+      <!--FOTOER-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="inner-content">
+                <p>
+                  Copyright © 2023 Company Name <a href="index.html">MSA Bank</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <script src="{{url_for('static',filename='assets/js/all.min.js')}}"></script>
+  <script src="{{url_for('static',filename='jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='Bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/js/custom.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/js/owl.js')}}"></script>
+{% endblock %}
+<!-- END BODY -->

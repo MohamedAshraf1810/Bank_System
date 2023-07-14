@@ -1,0 +1,78 @@
+.AdminPanel
+{
+    background-image: url(../images/50cxl0f8.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.AdminPanelDiv1
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: 10%;
+}
+
+.AdminPanelDiv1 h3
+{
+    color: white;
+}
+
+.AdminPanelDiv2
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AdminPanelDiv2Ch1
+{
+    padding: 20px;
+    width: 30%;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.fa-lock
+{
+    font-size: 50px;
+    color: black;
+}
+
+.head
+{
+    text-align: center;
+}
+
+.head h1
+{
+    margin: 15px 0 15px 0;
+}
+
+.form-label , .form-check-label
+{
+    font-weight: bold;
+}
+
+
+.btn-primary
+{
+    background-image: linear-gradient(to right , rgb(115,146,194),rgb(21,66,101));
+    width: 100%;
+    border: none;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 1024px) 
+{
+    .AdminPanelDiv2Ch1
+    {
+        width: 50%;
+    }
+}

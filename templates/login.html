@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+<!-- TITLE -->
+{% block title %} Login page {% endblock %}
+
+
+<!-- STYLE SHEETS -->
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">   
+{% endblock %}
+
+
+
+<!-- BODY -->
+{% block content %}
+
+<!-- PreLoader -->
+<div id="preloader"></div>
+
+<section class="BDFSection">
+    <div class="BDFSectionCON1">
+        <div class="S1Cn1D1">
+            <div>
+                <span class="S1Cn1D1spn1">Welcome To Login</span><br>
+                <span class="and">&</span><br>
+                <span class="S1Cn1D1spn2">Authentication</span>
+            </div>
+        </div>
+        <div class="S1Cn1D2">
+            <div>
+                <div>
+                    <h1>Login to your account</h1>
+                    <h5>Don’t have an account?<br> <a href="#">Sign Up Free!</a></h5>
+                </div>
+                <div>
+                    <!-- POST FOR SENSITIVE DATA -->
+                    <form method="post" action="/login_user">
+                        <div class="formcontainer">
+                            <div class="container">
+                                <label for="uname"><strong>Username</strong></label>
+                                <input id="username" type="text" placeholder="Enter Username" name="username" required>
+                                <label for="psw"><strong>Password</strong></label>
+                                <input id="password" type="password" placeholder="Enter Password" name="password" required/>
+                                <span class="invalid_message">
+                                    {% with messages = get_flashed_messages() %}
+                                        {% if messages %}
+                                            {%for msg in messages %}
+                                                {{ msg }}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {%endwith%}
+                                </span>
+                                </div>
+                        </div>
+                        <div class="BtnControl">
+                            <a href="#">
+                                <button id="LoginBtn" class="bn632-hover bn25" name="LoginCheckBTN" value="LoginCheckBTN" onclick="CheckData()">Login</button>
+                                <!-- <button id="voicebtn" class="bn632-hover bn25" name="AuthenticateByVoice" value="AuthenticateByVoice">voice Authenticate</button> -->
+                            </a>
+                            <div class="container">
+                                <label>Remember me</label>
+                                <input type="checkbox"  checked="checked" name="remember">
+                                <span class="psw"><a href="#"> Forgot password?</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+{% endblock%}
+
+<!-- END BODY -->
